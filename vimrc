@@ -38,6 +38,7 @@ set guioptions-=m
 au GUIEnter * simalt ~x
 
 "let g:ale_completion_enabled = 1
+let g:ale_sign_column_always = 1
 
 autocmd FileType python setlocal indentkeys-=<:>
 autocmd FileType python setlocal indentkeys-=:
