@@ -40,6 +40,9 @@ au GUIEnter * simalt ~x
 "let g:ale_completion_enabled = 1
 let g:ale_echo_msg_format = '%linter%: %code%: %s'
 let g:ale_sign_column_always = 1
+" Preserve search highlights
+highlight ALEError   ctermbg=NONE guibg=NONE
+highlight ALEWarning ctermbg=NONE guibg=NONE
 
 autocmd FileType python setlocal indentkeys-=<:>
 autocmd FileType python setlocal indentkeys-=:
